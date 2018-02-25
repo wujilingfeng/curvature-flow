@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <IncludePath>$(SolutionDir)external\nanogui\include\nanogui;$(SolutionDir)external\nanogui\ext\eigen;$(SolutionDir)include;$(SolutionDir)external\CoMISo\ext\gmm-4.2\include;$(SolutionDir)external\CoMISo\..;$(SolutionDir)external\embree\include;$(SolutionDir)external\tinyxml2;$(SolutionDir)external\triangle;$(SolutionDir)external\tetgen;$(SolutionDir)external\stb_image;$(SolutionDir)external\nanogui\ext\nanovg\src;$(SolutionDir)external\nanogui\include;$(SolutionDir)external\nanogui\ext\glfw\include;$(SolutionDir)external\nanogui\ext\glew\include;$(SolutionDir)external\lim;D:\Program Files\openmesh6.3(64)\OpenMesh 6.3\include;E:\spetra\spectra\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)lib;D:\Program Files\openmesh6.3(64)\OpenMesh 6.3\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <SDLCheck>false</SDLCheck>
+      <PreprocessorDefinitions>IGL_VIEWER_WITH_NANOGUI;_USE_MATH_DEFINES;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>nanogui.lib;glew.lib;igl_viewer.lib;opengl32.lib;OpenMeshCore.lib;OpenMeshTools.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup />
+</Project>
